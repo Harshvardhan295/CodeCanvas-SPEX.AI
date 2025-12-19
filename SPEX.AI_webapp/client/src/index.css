@@ -1,0 +1,77 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  /* SPEX Professional Palette */
+  --color-spex-bg: #050508;
+  --color-spex-surface: rgba(255, 255, 255, 0.03);
+  --color-spex-yellow: #fcee0a; /* Primary Accent */
+  --color-spex-cyan: #fcee0a;   /* Secondary Accent - REPLACED CYAN WITH YELLOW */
+  --color-spex-white: #ffffff;
+  --color-spex-border: rgba(255, 255, 255, 0.1);
+
+  --font-display: 'Orbitron', sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+:root {
+  --background: 240 10% 4%;
+  --foreground: 0 0% 100%;
+}
+
+@layer base {
+  body {
+    @apply font-body bg-spex-bg text-spex-white overflow-hidden antialiased;
+    /* Deep, professional tech background */
+    background: radial-gradient(circle at 50% 0%, #11111a 0%, #050508 60%);
+  }
+}
+
+@layer components {
+  /* Modern Glass Effect - Cleaner & Sharper */
+  .spex-glass {
+    background: var(--color-spex-surface);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--color-spex-border);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Glow Utilities */
+  .glow-text-cyan {
+    /* Updated RGB for Yellow (252, 238, 10) */
+    text-shadow: 0 0 20px rgba(252, 238, 10, 0.5);
+  }
+  
+  .glow-text-yellow {
+    text-shadow: 0 0 20px rgba(252, 238, 10, 0.5);
+  }
+
+  .glow-border-cyan {
+    /* Updated RGB for Yellow (252, 238, 10) */
+    box-shadow: 0 0 15px rgba(252, 238, 10, 0.15);
+    border-color: rgba(252, 238, 10, 0.5);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}

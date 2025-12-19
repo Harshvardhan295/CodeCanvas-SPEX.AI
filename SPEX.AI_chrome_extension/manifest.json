@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "SPEX.AI",
+  "version": "1.1",
+  "permissions": [
+    "sidePanel",
+    "tabs",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "popup.html"
+  },
+  "action": {
+    "default_title": "Open SPEX AI"
+  },
+  "host_permissions": [
+    "https://webcrawler-h6ag.onrender.com/*"
+  ]
+}
