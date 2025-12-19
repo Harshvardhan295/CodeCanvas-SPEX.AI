@@ -44,21 +44,22 @@ A lightweight browser companion.
 ### 🖥️ Web Application Demo
 > Experience the Source Dive and Voice Command features in action.
 
-[INSERT WEBAPP DEMO VIDEO HERE]
+https://github.com/user-attachments/assets/1eb41812-0b6c-4491-be08-cc0036070ae1
+
 
 <br>
 
 ### 📱 Mobile Application Demo
 > See the cross-platform Flutter experience.
 
-[INSERT MOBILE APP DEMO VIDEO HERE]
+https://github.com/user-attachments/assets/5c9a183f-d2e1-4d12-ae79-29e11e63d6e2
 
 <br>
 
 ### 🧩 Chrome Extension Demo
 > Quick access workflow.
 
-[INSERT EXTENSION DEMO VIDEO HERE]
+https://github.com/user-attachments/assets/d06d1387-f96b-4c5c-8cd5-234a71cf716d
 
 ---
 
